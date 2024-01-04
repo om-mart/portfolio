@@ -45,19 +45,25 @@
                     <p>Introduction and background information.</p>
                     <div class="row">
                         <div class="col-4">
+                          <a href="assets/docs/resume.pdf" download="resume.pdf">
                             <button class="btn btn-primary btn-lg w-100">
                               <i class="bi bi-file-earmark-arrow-down"></i> Resume
-                          </button>
+                            </button>
+                          </a>
                         </div>
                         <div class="col-4">
+                          <a href="https://www.linkedin.com/in/olivia-martinez-487811260/" target="_blank">
                             <button class="btn btn-primary btn-lg w-100">
                               <i class="bi bi-linkedin"></i> LinkedIn
                           </button>
+                          </a>
                         </div>
                         <div class="col-4">
+                          <a href="https://github.com/om-mart" target="_blank">
                             <button class="btn btn-primary btn-lg w-100">
                               <i class="bi bi-github"></i> GitHub
-                          </button>
+                            </button>
+                          </a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +174,7 @@
                         </div>
                         <div class="modal-body">
                             <p>Short description of Project 1.
-                                <a href="https://github.com/" target="_blank"> <b>View project on GitHub</b></a>
+                                <a href="https://github.com/om-mart/portfolio" target="_blank"> <b>View project on GitHub</b></a>
                             </p>
                             <!-- Photo Gallery -->
                             <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
@@ -203,13 +209,59 @@
             <!-- Project Card 2 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="assets/icons/favicon.jpg" class="card-img-top" alt="Project Image">
+                    <!-- Trigger Modal -->
+                    <img src="assets/icons/favicon.jpg" class="card-img-top" alt="Project Image" data-bs-toggle="modal" data-bs-target="#projectModal2">
                     <div class="card-body">
                         <h5 class="card-title">Project Title 2</h5>
                         <p class="card-text">
                             Short description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
-                        <a href="https://github.com/username/project2" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        <!-- Trigger Modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">
+    Learn More
+  </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Structure for Project 2 -->
+            <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel2">Project Title 2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Short description of Project 2.
+                              <a href="https://github.com/om-mart/portfolio" target="_blank"> <b>View project on GitHub</b></a>
+                            </p>
+                            <!-- Photo Gallery -->
+                            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/demo.png" class="d-block w-100" alt="Project 1 Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demo.png" class="d-block w-100" alt="Project 1 Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demo.png" class="d-block w-100" alt="Project 1 Image 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+                            </div>
+                            <!-- GitHub Link -->
+                            <div class="modal-footer">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -217,55 +269,100 @@
             <!-- Project Card 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="assets/icons/favicon.jpg" class="card-img-top" alt="Project Image">
+                    <!-- Trigger Modal -->
+                    <img src="assets/icons/favicon.jpg" class="card-img-top" alt="Project Image" data-bs-toggle="modal" data-bs-target="#projectModal3">
                     <div class="card-body">
                         <h5 class="card-title">Project Title 3</h5>
                         <p class="card-text">
-                            Short description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Short description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
-                        <a href="https://github.com/username/project3" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        <!-- Trigger Modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">
+    Learn More
+  </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Structure for Project 3 -->
+            <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel3">Project Title 3</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Short description of Project 3.
+                              <a href="https://github.com/om-mart/portfolio" target="_blank"> <b>View project on GitHub</b></a>
+                            </p>
+                            <!-- Photo Gallery -->
+                            <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/demo.png" class="d-block w-100" alt="Project 1 Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demo.png" class="d-block w-100" alt="Project 1 Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demo.png" class="d-block w-100" alt="Project 1 Image 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+                            </div>
+                            <!-- GitHub Link -->
+                            <div class="modal-footer">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Contact Section -->
-    <div class="container my-5" id="contact">
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="position-relative d-flex align-items-center justify-content-center">
-                    <h1 class="display-1 text-uppercase text-black">Contact</h1>
+        <!-- Contact Section -->
+        <div class="container my-5" id="contact">
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="position-relative d-flex align-items-center justify-content-center">
+                        <h1 class="display-1 text-uppercase text-black">Contact</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="bg-light p-5 shadow rounded-3">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Your message here" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="bg-light p-5 shadow rounded-3">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Your message here" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!--Boostrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!--Boostrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
